@@ -59,33 +59,29 @@ namespace WpfAppLessonWPF4
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-            double rate = Convert.ToDouble(rateA.Text);
             double sum = Convert.ToDouble(sumA.Text);
-            double res = rate * sum;
+            double res = 0.0254 * sum;
             resA.Text = res.ToString();
         }
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
-            double rate = Convert.ToDouble(rateM.Text);
             double sum = Convert.ToDouble(sumM.Text);
-            double res = rate * sum;
+            double res = 0.3048 * sum;
             resM.Text = res.ToString();
         }
 
         private void Button_Click_6(object sender, RoutedEventArgs e)
         {
-            double rate = Convert.ToDouble(rateMm.Text);
             double sum = Convert.ToDouble(sumMm.Text);
-            double res = rate * sum;
+            double res = 1610 * sum;
             resMm.Text = res.ToString();
         }
 
         private void Button_Click_7(object sender, RoutedEventArgs e)
         {
-            double rate = Convert.ToDouble(rateV.Text);
             double sum = Convert.ToDouble(sumV.Text);
-            double res = rate * sum;
+            double res = 1066.8 * sum;
             resV.Text = res.ToString();
         }
     }

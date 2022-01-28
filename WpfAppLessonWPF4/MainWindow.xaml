@@ -28,7 +28,7 @@
                             <TextBox x:Name="sum" Grid.Row="1" Grid.Column="1" Margin="3"/>
                             <Button Content="Рассчитать" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="10, 3" Click="Button_Click"/>
                             <Label Content="Результат" Grid.Row="3" Grid.Column="0"/>
-                            <TextBox x:Name="resSum" Grid.Row="31" Grid.Column="1" Margin="3" IsReadOnly="True"/>
+                            <TextBox x:Name="resSum" Grid.Row="3" Grid.Column="1" Margin="3" IsReadOnly="True"/>
                         </Grid>
                     </GroupBox>
                     <GroupBox Header="Евро в рубли" Margin="10" Padding="5" BorderThickness="2" BorderBrush="Red">
@@ -49,7 +49,7 @@
                             <TextBox x:Name="sumEuro" Grid.Row="1" Grid.Column="1" Margin="3"/>
                             <Button Content="Рассчитать" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="10, 3" Click="Button_Click_1"/>
                             <Label Content="Результат" Grid.Row="3" Grid.Column="0"/>
-                            <TextBox x:Name="resSumEuro" Grid.Row="31" Grid.Column="1" Margin="3" IsReadOnly="True"/>
+                            <TextBox x:Name="resSumEuro" Grid.Row="3" Grid.Column="1" Margin="3" IsReadOnly="True"/>
                         </Grid>
                     </GroupBox>
                     <GroupBox Header="Гривны в рубли" Margin="10" Padding="5" BorderThickness="2" BorderBrush="#FFC8C800">
@@ -70,7 +70,7 @@
                             <TextBox x:Name="sumGriv" Grid.Row="1" Grid.Column="1" Margin="3"/>
                             <Button Content="Рассчитать" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="10, 3" Click="Button_Click_2"/>
                             <Label Content="Результат" Grid.Row="3" Grid.Column="0"/>
-                            <TextBox x:Name="resSumGriv" Grid.Row="31" Grid.Column="1" Margin="3" IsReadOnly="True"/>
+                            <TextBox x:Name="resSumGriv" Grid.Row="3" Grid.Column="1" Margin="3" IsReadOnly="True"/>
                         </Grid>
                     </GroupBox>
                     <GroupBox Header="Армянские драмы в рубли" Margin="10" Padding="5" BorderThickness="2" BorderBrush="Lime">
@@ -91,17 +91,16 @@
                             <TextBox x:Name="sumArm" Grid.Row="1" Grid.Column="1" Margin="3"/>
                             <Button Content="Рассчитать" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="10, 3" Click="Button_Click_3"/>
                             <Label Content="Результат" Grid.Row="3" Grid.Column="0"/>
-                            <TextBox x:Name="resSumArm" Grid.Row="31" Grid.Column="1" Margin="3" IsReadOnly="True"/>
+                            <TextBox x:Name="resSumArm" Grid.Row="3" Grid.Column="1" Margin="3" IsReadOnly="True"/>
                         </Grid>
                     </GroupBox>
                 </UniformGrid>
             </TabItem>
             <TabItem Header="Расстояния">
                 <UniformGrid Rows="2" Columns="2">
-                    <GroupBox Header="Вёрсты (мерные) в километры" Margin="10" Padding="5" BorderThickness="2" BorderBrush="Blue">
+                    <GroupBox Header="Дюймы в метры" Margin="10" Padding="5" BorderThickness="2" BorderBrush="Blue">
                         <Grid>
                             <Grid.RowDefinitions>
-                                <RowDefinition/>
                                 <RowDefinition/>
                                 <RowDefinition/>
                                 <RowDefinition/>
@@ -110,19 +109,16 @@
                                 <ColumnDefinition Width="Auto"/>
                                 <ColumnDefinition/>
                             </Grid.ColumnDefinitions>
-                            <Label Content="Одна Верста составляет, километров"/>
-                            <TextBox x:Name="rateA" Grid.Row="0" Grid.Column="1" Margin="3" Text="2,1336"/>
-                            <Label Content="Введите расстояние" Grid.Row="1" Grid.Column="0"/>
-                            <TextBox x:Name="sumA" Grid.Row="1" Grid.Column="1" Margin="3"/>
-                            <Button Content="Рассчитать" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="10, 3" Click="Button_Click_4"/>
-                            <Label Content="Результат" Grid.Row="3" Grid.Column="0"/>
-                            <TextBox x:Name="resA" Grid.Row="31" Grid.Column="1" Margin="3" IsReadOnly="True"/>
+                            <Label Content="Введите дюймы" Grid.Row="0" Grid.Column="0"/>
+                            <TextBox x:Name="sumA" Grid.Row="0" Grid.Column="1" Margin="3"/>
+                            <Button Content="Рассчитать" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="10, 3" Click="Button_Click_4"/>
+                            <Label Content="Результат" Grid.Row="2" Grid.Column="0"/>
+                            <TextBox x:Name="resA" Grid.Row="2" Grid.Column="1" Margin="3" IsReadOnly="True"/>
                         </Grid>
                     </GroupBox>
-                    <GroupBox Header="Британские мили в километры" Margin="10" Padding="5" BorderThickness="2" BorderBrush="Red">
+                    <GroupBox Header="Футы в метры" Margin="10" Padding="5" BorderThickness="2" BorderBrush="Red">
                         <Grid>
                             <Grid.RowDefinitions>
-                                <RowDefinition/>
                                 <RowDefinition/>
                                 <RowDefinition/>
                                 <RowDefinition/>
@@ -131,19 +127,16 @@
                                 <ColumnDefinition Width="Auto"/>
                                 <ColumnDefinition/>
                             </Grid.ColumnDefinitions>
-                            <Label Content="Одна миля составляет, км. "/>
-                            <TextBox x:Name="rateM" Grid.Row="0" Grid.Column="1" Margin="3" Text="1,609344"/>
-                            <Label Content="Введите расстояние" Grid.Row="1" Grid.Column="0"/>
-                            <TextBox x:Name="sumM" Grid.Row="1" Grid.Column="1" Margin="3"/>
-                            <Button Content="Рассчитать" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="10, 3" Click="Button_Click_5"/>
-                            <Label Content="Результат" Grid.Row="3" Grid.Column="0"/>
-                            <TextBox x:Name="resM" Grid.Row="31" Grid.Column="1" Margin="3" IsReadOnly="True"/>
+                            <Label Content="Введите футы" Grid.Row="0" Grid.Column="0"/>
+                            <TextBox x:Name="sumM" Grid.Row="0" Grid.Column="1" Margin="3"/>
+                            <Button Content="Рассчитать" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="10, 3" Click="Button_Click_5"/>
+                            <Label Content="Результат" Grid.Row="2" Grid.Column="0"/>
+                            <TextBox x:Name="resM" Grid.Row="2" Grid.Column="1" Margin="3" IsReadOnly="True"/>
                         </Grid>
                     </GroupBox>
-                    <GroupBox Header="Русские мили в километры" Margin="10" Padding="5" BorderThickness="2" BorderBrush="#FFC8C800">
+                    <GroupBox Header="Мили в метры" Margin="10" Padding="5" BorderThickness="2" BorderBrush="#FFC8C800">
                         <Grid>
                             <Grid.RowDefinitions>
-                                <RowDefinition/>
                                 <RowDefinition/>
                                 <RowDefinition/>
                                 <RowDefinition/>
@@ -152,19 +145,16 @@
                                 <ColumnDefinition Width="Auto"/>
                                 <ColumnDefinition/>
                             </Grid.ColumnDefinitions>
-                            <Label Content="Одна миля составляет, км"/>
-                            <TextBox x:Name="rateMm" Grid.Row="0" Grid.Column="1" Margin="3" Text="7,4676"/>
-                            <Label Content="ОВведите расстояние" Grid.Row="1" Grid.Column="0"/>
-                            <TextBox x:Name="sumMm" Grid.Row="1" Grid.Column="1" Margin="3"/>
-                            <Button Content="Рассчитать" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="10, 3" Click="Button_Click_6"/>
-                            <Label Content="Результат" Grid.Row="3" Grid.Column="0"/>
-                            <TextBox x:Name="resMm" Grid.Row="31" Grid.Column="1" Margin="3" IsReadOnly="True"/>
+                            <Label Content="Введите мили" Grid.Row="0" Grid.Column="0"/>
+                            <TextBox x:Name="sumMm" Grid.Row="0" Grid.Column="1" Margin="3"/>
+                            <Button Content="Рассчитать" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="10, 3" Click="Button_Click_6"/>
+                            <Label Content="Результат" Grid.Row="2" Grid.Column="0"/>
+                            <TextBox x:Name="resMm" Grid.Row="2" Grid.Column="1" Margin="3" IsReadOnly="True"/>
                         </Grid>
                     </GroupBox>
-                    <GroupBox Header="Всё в километры" Margin="10" Padding="5" BorderThickness="2" BorderBrush="Lime">
+                    <GroupBox Header="Вёрсты в метры" Margin="10" Padding="5" BorderThickness="2" BorderBrush="Lime">
                         <Grid>
                             <Grid.RowDefinitions>
-                                <RowDefinition/>
                                 <RowDefinition/>
                                 <RowDefinition/>
                                 <RowDefinition/>
@@ -173,13 +163,11 @@
                                 <ColumnDefinition Width="Auto"/>
                                 <ColumnDefinition/>
                             </Grid.ColumnDefinitions>
-                            <Label Content="Введите отношение к км"/>
-                            <TextBox x:Name="rateV" Grid.Row="0" Grid.Column="1" Margin="3"/>
-                            <Label Content="Введите расстояние" Grid.Row="1" Grid.Column="0"/>
-                            <TextBox x:Name="sumV" Grid.Row="1" Grid.Column="1" Margin="3"/>
-                            <Button Content="Рассчитать" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="10, 3" Click="Button_Click_7"/>
-                            <Label Content="Результат" Grid.Row="3" Grid.Column="0"/>
-                            <TextBox x:Name="resV" Grid.Row="31" Grid.Column="1" Margin="3" IsReadOnly="True"/>
+                            <Label Content="Введите вёрсты" Grid.Row="0" Grid.Column="0"/>
+                            <TextBox x:Name="sumV" Grid.Row="0" Grid.Column="1" Margin="3"/>
+                            <Button Content="Рассчитать" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="10, 3" Click="Button_Click_7"/>
+                            <Label Content="Результат" Grid.Row="2" Grid.Column="0"/>
+                            <TextBox x:Name="resV" Grid.Row="2" Grid.Column="1" Margin="3" IsReadOnly="True"/>
                         </Grid>
                     </GroupBox>
                 </UniformGrid>
